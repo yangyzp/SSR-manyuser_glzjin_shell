@@ -137,9 +137,9 @@ supervisor_installation(){
 		read -p "请输入shadowsocks所在目录绝对路径（eg：/root/shadowsocks）" shadowsocks_folder
 	fi
 	if [[ ${ID} == "centos" ]];then
-		yum -y install supervisor
-	else
 		easy_install supervisor
+	else
+		yum -y install supervisor
 	fi
 	if [[ $? -ne 0 ]]; then 
 		echo -e "${Error} ${RedBG} supervisor 安装失败 ${Font}"
