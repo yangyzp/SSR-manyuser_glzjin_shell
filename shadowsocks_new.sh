@@ -155,8 +155,6 @@ supervisor_conf_modify_debian(){
 	cat>${suerpvisor_conf_dir}/shadowsocks.conf<<EOF
 [program:shadowsocks]
 command = python ${shadowsocks_folder}/server.py
-stdout_logfile = /var/log/ssmu.log
-stderr_logfile = /var/log/ssmu.log
 user = root
 autostart = true
 autorestart = true
@@ -169,8 +167,6 @@ supervisor_conf_modify_ubuntu(){
 	cat>${suerpvisor_conf_dir}/shadowsocks.conf<<EOF
 [program:shadowsocks]
 command = python ${shadowsocks_folder}/server.py
-stdout_logfile = /var/log/ssmu.log
-stderr_logfile = /var/log/ssmu.log
 user = root
 autostart = true
 autorestart = true
@@ -183,8 +179,6 @@ supervisor_conf_modify_centos(){
 	cat>>/etc/supervisord.conf<<EOF
 [program:shadowsocks]
 command = python ${shadowsocks_folder}/server.py
-stdout_logfile = /var/log/ssmu.log
-stderr_logfile = /var/log/ssmu.log
 user = root
 autostart = true
 autorestart = true
