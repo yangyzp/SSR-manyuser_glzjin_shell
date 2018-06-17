@@ -139,7 +139,7 @@ supervisor_installation(){
 	if [[ ${ID} == "centos" ]];then
 		yum -y install supervisor
 	else
-		apt-get install supervisor -y
+		easy_install supervisor
 	fi
 	if [[ $? -ne 0 ]]; then 
 		echo -e "${Error} ${RedBG} supervisor 安装失败 ${Font}"
