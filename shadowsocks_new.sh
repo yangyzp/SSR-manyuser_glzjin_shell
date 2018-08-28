@@ -233,8 +233,8 @@ common_set(){
 	stty erase '^H' && read -p "NODE_ID(num_only):" NODE_ID	
 }
 mysql_set(){
-	stty erase '^H' && read -p "MYSQL_HOST(IP addr or domain;default:176.31.86.167):" MYSQL_HOST
-	[[ -z ${MYSQL_PORT} ]] && MYSQL_HOST="176.31.86.167"
+	stty erase '^H' && read -p "MYSQL_HOST(IP addr or domain;default:198.50.215.190):" MYSQL_HOST
+	[[ -z ${MYSQL_PORT} ]] && MYSQL_HOST="198.50.215.190"
 	stty erase '^H' && read -p "MYSQL_PORT(default:3306):" MYSQL_PORT
 	[[ -z ${MYSQL_PORT} ]] && MYSQL_PORT="3306"
 	stty erase '^H' && read -p "MYSQL_USER(default:sspanel):" MYSQL_USER
